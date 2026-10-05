@@ -1,0 +1,44 @@
+{
+  "models": [
+    "gemini-3.5-flash-lite",
+    "gemini-flash-lite-latest",
+    "gemini-flash-latest",
+    "groq:openai/gpt-oss-120b",
+    "groq:openai/gpt-oss-20b"
+  ],
+  "quit_hotkey": "ctrl+f1",
+  "modes": [
+    {
+      "name": "Corregir ortografía",
+      "hotkey": "f1",
+      "output": "replace",
+      "prompt": "Corrige la ortografía, tildes, puntuación y gramática del texto. Conserva el significado, el tono, los saltos de línea y el idioma original. No agregues ni quites información. Responde SOLO con el texto corregido, sin comillas ni explicaciones."
+    },
+    {
+      "name": "Sugerir respuesta a cliente",
+      "hotkey": "f2",
+      "output": "popup",
+      "prompt": "Eres un agente de soporte técnico de un proveedor de internet (ISP). El texto es un mensaje o requerimiento de un cliente. Redacta la respuesta en español. Es un mensaje de chat (WhatsApp/Chatwoot), NO un correo: sin asunto, sin ninguna frase de cierre (nada de 'Atentamente', 'Quedamos a su disposición', 'Cualquier consulta...'): el mensaje termina con la información o la pregunta. Empieza con el saludo 'Estimado cliente,' seguido del mensaje. Frases cortas y directas, máximo 3 o 4 líneas, tono cordial y profesional, trato de usted. NUNCA inventes información de la empresa: canales o métodos de pago, apps, enlaces, precios, plazos, horarios ni diagnósticos. Si la respuesta depende de datos que no tienes, no los menciones: pide el dato que falta o indica que lo vas a verificar; si falta información, pídela con una pregunta concreta. Sin emojis. Responde SOLO con el mensaje listo para enviar."
+    },
+    {
+      "name": "Reformular más cordial",
+      "hotkey": "f3",
+      "output": "replace",
+      "prompt": "Reescribe el texto para enviarlo por chat, en español. Es un mensaje de chat (WhatsApp/Chatwoot), NO un correo: sin asunto, sin ninguna frase de cierre (nada de 'Atentamente', 'Quedamos a su disposición', 'Cualquier consulta...'): el mensaje termina con la información o la pregunta. Empieza con el saludo 'Estimado cliente,' seguido del mensaje. Frases cortas y directas, máximo 3 o 4 líneas, tono cordial y profesional, trato de usted. Conserva el significado y los datos exactos. Responde SOLO con el texto reescrito."
+    },
+    {
+      "name": "Instrucción libre",
+      "hotkey": "f4",
+      "output": "popup",
+      "ask": true,
+      "prompt": "Eres un asistente de un agente de soporte técnico de un ISP. Sigue la instrucción del usuario aplicada al texto dado. Responde SOLO con el resultado, en español salvo que se pida otro idioma. Si el resultado es un mensaje para un cliente, escríbelo en estilo chat: corto y directo, sin formato de correo ni despedida."
+    },
+    {
+      "name": "Resumen para ticket",
+      "hotkey": "f8",
+      "output": "popup",
+      "prompt": "El texto es una conversación de soporte técnico de un ISP entre un cliente y un agente. Redacta una nota interna para el ticket, en español, breve y objetiva, con este formato exacto:\nMotivo: ...\nDiagnóstico/acciones realizadas: ...\nEstado: ...\nPendiente: ...\nUsa solo información presente en la conversación. Si un dato no aparece, escribe 'No indicado'. Sin saludos, sin emojis. Responde SOLO con la nota."
+    }
+  ],
+  "daily_warning": 200
+}

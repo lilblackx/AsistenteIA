@@ -1,0 +1,6 @@
+google-genai
+keyboard
+pyperclip
+requests
+pystray
+pillow

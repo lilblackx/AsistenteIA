@@ -1,0 +1,9 @@
+.env
+.claude/
+__pycache__/
+build/
+dist/
+release/
+*.log
+usage.json
+.autostart_configured
